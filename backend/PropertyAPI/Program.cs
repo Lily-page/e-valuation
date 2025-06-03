@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowVueApp", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "https://work-1-jmzfbtsplochvqqd.prod-runtime.all-hands.dev")
+        policy.WithOrigins("http://localhost:12000", "https://work-1-jmzfbtsplochvqqd.prod-runtime.all-hands.dev")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });

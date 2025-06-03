@@ -1,15 +1,14 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <h1>{{ $t('welcome') }}</h1>
 
+      <button @click="toggleLang">
+        {{ $t('button.toggleLang') }}
+      </button>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -19,6 +18,17 @@ import HelloWorld from './components/HelloWorld.vue'
 
   <RouterView />
 </template>
+
+<script setup lang="ts">import { RouterLink, RouterView } from 'vue-router'
+import HelloWorld from './components/HelloWorld.vue'
+
+import { useI18n } from 'vue-i18n'
+
+const { locale } = useI18n()
+
+function toggleLang() {
+  locale.value = locale.value === 'en' ? 'zh' : 'en'
+}</script>
 
 <style scoped>
 header {
