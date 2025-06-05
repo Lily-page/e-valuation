@@ -3,6 +3,7 @@ import { onMounted } from 'vue'
 import { usePropertyStore } from '@/stores/counter'
 import PropertySearchFilters from '@/components/PropertySearchFilters.vue'
 import PropertyGrid from '@/components/PropertyGrid.vue'
+import PropertyLanguege from '@/components/PropertyLanguege.vue'
 
 const propertyStore = usePropertyStore()
 
@@ -14,11 +15,11 @@ onMounted(async () => {
 
 <template>
   <main class="property-search-page">
+    <PropertyLanguege />
     <div class="page-header">
       <h1>Property Search</h1>
-      <p>Find your perfect property with our advanced search filters</p>
+      <p>Please find your property with search filters.</p>
     </div>
-    
     <PropertySearchFilters />
     <PropertyGrid />
   </main>
@@ -26,8 +27,8 @@ onMounted(async () => {
 
 <style scoped>
 .property-search-page {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1300px;
+/*  margin: 0 auto;*/
   padding: 20px;
 }
 

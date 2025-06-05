@@ -24,7 +24,23 @@ namespace PropertyAPI.Models
         [Required]
         [StringLength(200)]
         public string Address { get; set; } = string.Empty;
-        
+
+        [Required]
+        [StringLength(100)]
+        public string GrossArea { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(100)]
+        public string SaleableArea { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(100)]
+        public string YearBuilt { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(100)]
+        public string RefNo { get; set; } = string.Empty;
+
         [StringLength(500)]
         public string Description { get; set; } = string.Empty;
         

@@ -1,25 +1,26 @@
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img class="header-logo" src="@/assets/header_20221220.png" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      <h1>{{ $t('welcome') }}</h1>
+      <!--<HelloWorld msg="You did it!" />-->
+      <!--<h1>{{ $t('welcome') }}</h1>
 
       <button @click="toggleLang">
         {{ $t('button.toggleLang') }}
-      </button>
-      <nav>
+      </button>-->
+      <!--<nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-      </nav>
+      </nav>-->
     </div>
   </header>
 
   <RouterView />
 </template>
 
-<script setup lang="ts">import { RouterLink, RouterView } from 'vue-router'
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 
 import { useI18n } from 'vue-i18n'
@@ -36,9 +37,10 @@ header {
   max-height: 100vh;
 }
 
-.logo {
+.header-logo {
   display: block;
-  margin: 0 auto 2rem;
+  max-width: 82vw;
+  margin: 0 auto;
 }
 
 nav {
@@ -70,7 +72,7 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+/*    padding-right: calc(var(--section-gap) / 2);*/
   }
 
   .logo {

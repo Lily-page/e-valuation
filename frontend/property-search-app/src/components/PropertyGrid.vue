@@ -48,7 +48,7 @@
           :disabled="!propertyStore.hasPreviousPage"
           class="pagination-btn"
         >
-          ← Previous
+         < Previous
         </button>
 
         <div class="page-numbers">
@@ -67,7 +67,7 @@
           :disabled="!propertyStore.hasNextPage"
           class="pagination-btn"
         >
-          Next →
+          Next >
         </button>
       </div>
     </div>
@@ -121,15 +121,15 @@ const visiblePages = computed(() => {
   color: #666;
 }
 
-.loading-spinner {
-  width: 40px;
-  height: 40px;
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #007bff;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin-bottom: 16px;
-}
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #ed1944;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 16px;
+  }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -145,15 +145,15 @@ const visiblePages = computed(() => {
   color: #dc3545;
 }
 
-.retry-btn {
-  margin-top: 16px;
-  padding: 8px 16px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  .retry-btn {
+    margin-top: 16px;
+    padding: 8px 16px;
+    background: #ed1944;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
 .retry-btn:hover {
   background: #0056b3;
@@ -209,10 +209,10 @@ const visiblePages = computed(() => {
   transition: all 0.2s;
 }
 
-.pagination-btn:hover:not(:disabled) {
-  background: #f8f9fa;
-  border-color: #007bff;
-}
+  .pagination-btn:hover:not(:disabled) {
+    background: #f8f9fa;
+    border-color: #ed1944;
+  }
 
 .pagination-btn:disabled {
   background: #f8f9fa;
@@ -240,16 +240,16 @@ const visiblePages = computed(() => {
   justify-content: center;
 }
 
-.page-btn:hover {
-  background: #f8f9fa;
-  border-color: #007bff;
-}
+  .page-btn:hover {
+    background: #f8f9fa;
+    border-color: #ed1944;
+  }
 
-.page-btn.active {
-  background: #007bff;
-  color: white;
-  border-color: #007bff;
-}
+  .page-btn.active {
+    background: #ed1944;
+    color: white;
+    border-color: #ed1944;
+  }
 
 @media (max-width: 768px) {
   .property-grid {

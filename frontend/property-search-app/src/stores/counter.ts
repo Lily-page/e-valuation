@@ -7,7 +7,7 @@ export const usePropertyStore = defineStore('property', () => {
   const properties = ref<Property[]>([])
   const filterOptions = ref<FilterOptions | null>(null)
   const currentPage = ref(1)
-  const pageSize = ref(10)
+  const pageSize = ref(9)
   const totalCount = ref(0)
   const totalPages = ref(0)
   const hasNextPage = ref(false)

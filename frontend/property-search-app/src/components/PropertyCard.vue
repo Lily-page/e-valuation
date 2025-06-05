@@ -14,14 +14,33 @@
         <h3 class="property-address">{{ property.address }}</h3>
         <div class="property-price">${{ formatPrice(property.salePrice) }}</div>
       </div>
-      
+
       <div class="property-location">
         <span class="region">{{ property.region }}</span>
         <span class="separator">•</span>
         <span class="district">{{ property.district }}</span>
       </div>
-      
+
       <div class="property-details">
+        <div class="detail-item">
+          <span class="detail-label">Gross Area</span>
+          <span class="detail-value">{{ property.grossArea == "" ? 'n/a' : property.grossArea }} </span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Saleable Area</span>
+          <span class="detail-value">{{ property.saleableArea == "" ? 'n/a' : property.saleableArea }} </span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Year Built</span>
+          <span class="detail-value">{{ property.yearBuilt == "" ? 'n/a' : property.yearBuilt }} </span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Ref No</span>
+          <span class="detail-value">{{ property.refNo == "" ? 'n/a' : property.refNo }} </span>
+        </div>
+      </div>
+
+      <div class="property-details" v-show="false">
         <div class="detail-item">
           <span class="detail-icon">🛏️</span>
           <span>{{ property.bedrooms }} bed{{ property.bedrooms !== 1 ? 's' : '' }}</span>
@@ -35,14 +54,14 @@
           <span>{{ property.area }} m²</span>
         </div>
       </div>
-      
-      <div class="property-description">
+
+      <div class="property-description" v-show="false">
         {{ truncateDescription(property.description) }}
       </div>
-      
+
       <div class="property-footer">
         <div class="listed-date">
-          Listed: {{ formatDate(property.listedDate) }}
+          Issue On {{ formatDate(property.listedDate) }}
         </div>
       </div>
     </div>
@@ -111,17 +130,17 @@ function onImageError(event: Event) {
   object-fit: cover;
 }
 
-.property-type-badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: rgba(0, 123, 255, 0.9);
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 600;
-}
+  .property-type-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(237, 25, 68, 1);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+  }
 
 .property-content {
   padding: 16px;
@@ -146,12 +165,12 @@ function onImageError(event: Event) {
   margin-right: 10px;
 }
 
-.property-price {
-  font-size: 18px;
-  font-weight: 700;
-  color: #007bff;
-  white-space: nowrap;
-}
+  .property-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ed1944;
+    white-space: nowrap;
+  }
 
 .property-location {
   color: #666;
@@ -164,23 +183,34 @@ function onImageError(event: Event) {
 }
 
 .property-details {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 12px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+  margin-bottom: 10px;
 }
 
 .detail-item {
   display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 14px;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 12px;
   color: #666;
 }
 
-.detail-icon {
-  font-size: 16px;
-}
+  .detail-label {
+    white-space: nowrap;
+    color: #ed1944;
+    font-weight: bold;
+  }
+
+  .detail-value {
+      text-align: right;
+      flex-grow: 1;
+  }
+
+  .detail-icon {
+    font-size: 16px;
+  }
 
 .property-description {
   color: #666;
@@ -215,4 +245,9 @@ function onImageError(event: Event) {
     gap: 12px;
   }
 }
+  @media (max-width: 768px) {
+    .property-details {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
