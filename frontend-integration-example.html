@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous JWT Token Integration Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .output {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px 0;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 3px;
+        }
+        .success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anonymous JWT Token Integration Example</h1>
+    
+    <div class="section">
+        <h2>1. Initialize Application (Get Anonymous Token)</h2>
+        <p>This simulates what happens when your application starts up.</p>
+        <button onclick="initializeApp()">Initialize App & Get Token</button>
+        <div id="initStatus"></div>
+        <div id="tokenInfo" class="output"></div>
+    </div>
+
+    <div class="section">
+        <h2>2. Make Authenticated API Requests</h2>
+        <p>These requests will use the token stored in cookies.</p>
+        <button onclick="getPropertyFilters()">Get Property Filters</button>
+        <button onclick="searchProperties()">Search Properties</button>
+        <div id="apiStatus"></div>
+        <div id="apiResults" class="output"></div>
+    </div>
+
+    <div class="section">
+        <h2>3. Token Management</h2>
+        <button onclick="checkTokenStatus()">Check Token Status</button>
+        <button onclick="refreshToken()">Refresh Token</button>
+        <button onclick="clearToken()">Clear Token</button>
+        <div id="tokenStatus"></div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:12001/api';
+
+        // Initialize application with anonymous token
+        async function initializeApp() {
+            const statusDiv = document.getElementById('initStatus');
+            const tokenDiv = document.getElementById('tokenInfo');
+            
+            try {
+                statusDiv.innerHTML = '<div class="status">Getting anonymous token...</div>';
+                
+                const response = await fetch(`${API_BASE}/auth/anonymous-token`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const tokenData = await response.json();
+                
+                // Store token in cookie
+                const expirationDate = new Date(tokenData.expiresAt);
+                const maxAge = Math.floor((expirationDate - new Date()) / 1000);
+                document.cookie = `auth_token=${tokenData.token}; path=/; max-age=${maxAge}; SameSite=Strict`;
+                
+                // Store expiration for token refresh logic
+                localStorage.setItem('token_expires_at', tokenData.expiresAt);
+                
+                statusDiv.innerHTML = '<div class="status success">✓ Anonymous token obtained successfully!</div>';
+                tokenDiv.textContent = JSON.stringify(tokenData, null, 2);
+                
+            } catch (error) {
+                statusDiv.innerHTML = `<div class="status error">✗ Failed to obtain token: ${error.message}</div>`;
+                tokenDiv.textContent = '';
+                console.error('Failed to obtain anonymous token:', error);
+            }
+        }
+
+        // Get authentication token from cookie
+        function getAuthToken() {
+            const cookies = document.cookie.split(';');
+            const tokenCookie = cookies.find(cookie => cookie.trim().startsWith('auth_token='));
+            return tokenCookie ? tokenCookie.split('=')[1] : null;
+        }
+
+        // Make authenticated API request
+        async function makeAuthenticatedRequest(url, options = {}) {
+            const token = getAuthToken();
+            
+            const headers = {
+                'Content-Type': 'application/json',
+                ...options.headers
+            };
+            
+            if (token) {
+                headers['Authorization'] = `Bearer ${token}`;
+            }
+            
+            return fetch(url, {
+                ...options,
+                headers
+            });
+        }
+
+        // Get property filters
+        async function getPropertyFilters() {
+            const statusDiv = document.getElementById('apiStatus');
+            const resultsDiv = document.getElementById('apiResults');
+            
+            try {
+                statusDiv.innerHTML = '<div class="status">Getting property filters...</div>';
+                
+                const response = await makeAuthenticatedRequest(`${API_BASE}/properties/filters`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                
+                statusDiv.innerHTML = '<div class="status success">✓ Property filters retrieved successfully!</div>';
+                resultsDiv.textContent = JSON.stringify(data, null, 2);
+                
+            } catch (error) {
+                statusDiv.innerHTML = `<div class="status error">✗ Failed to get filters: ${error.message}</div>`;
+                resultsDiv.textContent = '';
+                console.error('Failed to get property filters:', error);
+            }
+        }
+
+        // Search properties
+        async function searchProperties() {
+            const statusDiv = document.getElementById('apiStatus');
+            const resultsDiv = document.getElementById('apiResults');
+            
+            try {
+                statusDiv.innerHTML = '<div class="status">Searching properties...</div>';
+                
+                const searchRequest = {
+                    region: "Hong Kong Island",
+                    page: 1,
+                    pageSize: 3
+                };
+                
+                const response = await makeAuthenticatedRequest(`${API_BASE}/properties/search`, {
+                    method: 'POST',
+                    body: JSON.stringify(searchRequest)
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                
+                statusDiv.innerHTML = '<div class="status success">✓ Property search completed successfully!</div>';
+                resultsDiv.textContent = JSON.stringify(data, null, 2);
+                
+            } catch (error) {
+                statusDiv.innerHTML = `<div class="status error">✗ Failed to search properties: ${error.message}</div>`;
+                resultsDiv.textContent = '';
+                console.error('Failed to search properties:', error);
+            }
+        }
+
+        // Check if token is expired
+        function isTokenExpired() {
+            const expiresAt = localStorage.getItem('token_expires_at');
+            if (!expiresAt) return true;
+            
+            const expirationTime = new Date(expiresAt);
+            const now = new Date();
+            const fiveMinutesFromNow = new Date(now.getTime() + 5 * 60 * 1000);
+            
+            return expirationTime <= fiveMinutesFromNow;
+        }
+
+        // Check token status
+        function checkTokenStatus() {
+            const statusDiv = document.getElementById('tokenStatus');
+            const token = getAuthToken();
+            const expiresAt = localStorage.getItem('token_expires_at');
+            
+            if (!token) {
+                statusDiv.innerHTML = '<div class="status error">No token found</div>';
+                return;
+            }
+            
+            const expired = isTokenExpired();
+            const expirationTime = expiresAt ? new Date(expiresAt).toLocaleString() : 'Unknown';
+            
+            if (expired) {
+                statusDiv.innerHTML = `<div class="status error">Token expired or expires soon (${expirationTime})</div>`;
+            } else {
+                statusDiv.innerHTML = `<div class="status success">Token is valid (expires: ${expirationTime})</div>`;
+            }
+        }
+
+        // Refresh token
+        async function refreshToken() {
+            await initializeApp();
+            checkTokenStatus();
+        }
+
+        // Clear token
+        function clearToken() {
+            document.cookie = 'auth_token=; path=/; max-age=0';
+            localStorage.removeItem('token_expires_at');
+            document.getElementById('tokenStatus').innerHTML = '<div class="status">Token cleared</div>';
+        }
+
+        // Auto-refresh token when needed
+        setInterval(() => {
+            if (isTokenExpired()) {
+                console.log('Token expired, refreshing...');
+                refreshToken();
+            }
+        }, 5 * 60 * 1000); // Check every 5 minutes
+
+        // Initialize on page load
+        window.addEventListener('load', () => {
+            console.log('Page loaded, initializing app...');
+            initializeApp();
+        });
+    </script>
+</body>
+</html>

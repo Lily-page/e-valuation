@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PropertyAPI.Data;
@@ -7,6 +8,7 @@ namespace PropertyAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    // [Authorize] // Uncomment this line to require JWT authentication for all endpoints in this controller
     public class PropertiesController : ControllerBase
     {
         private readonly PropertyContext _context;

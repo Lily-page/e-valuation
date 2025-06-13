@@ -1,0 +1,32 @@
+### Get Anonymous Token
+POST http://localhost:12001/api/auth/anonymous-token
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:12001/api/auth/health
+
+### Test Properties API without token (should work - no auth required currently)
+GET http://localhost:12001/api/properties/filters
+
+### Get token and use it (demonstrates how frontend would work)
+POST http://localhost:12001/api/auth/anonymous-token
+Content-Type: application/json
+
+> {%
+  client.global.set("auth_token", response.body.token);
+%}
+
+### Use the token in subsequent requests
+GET http://localhost:12001/api/properties/filters
+Authorization: Bearer {{auth_token}}
+
+### Test property search with token
+POST http://localhost:12001/api/properties/search
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "region": "Hong Kong Island",
+  "page": 1,
+  "pageSize": 5
+}
