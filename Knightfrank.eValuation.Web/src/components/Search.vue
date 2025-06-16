@@ -59,7 +59,7 @@
 </template>
 
 <script setup lang="ts">
-  import { computed, reactive } from 'vue'
+  import { reactive } from 'vue'
   import { ElButton, ElForm, ElFormItem, ElSelect, ElOption } from 'element-plus'
 
   const formInline = reactive({

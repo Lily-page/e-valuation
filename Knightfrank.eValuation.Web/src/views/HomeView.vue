@@ -1,16 +1,7 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
-import { usePropertyStore } from '@/stores/counter'
 import Search from '@/components/Search.vue'
 import Result from '@/components/Result.vue'
 
-
-const propertyStore = usePropertyStore()
-
-onMounted(async () => {
-  await propertyStore.loadFilterOptions()
-  await propertyStore.searchProperties()
-})
 </script>
 
 <template>
