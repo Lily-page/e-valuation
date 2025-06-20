@@ -10,16 +10,14 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+  import { RouterView } from 'vue-router'
+  import { useI18n } from 'vue-i18n'
 
-import { useI18n } from 'vue-i18n'
+  const { locale } = useI18n()
 
-const { locale } = useI18n()
-
-function toggleLang() {
-  locale.value = locale.value === 'en' ? 'zh' : 'en'
-}
+  function toggleLang() {
+    locale.value = locale.value === 'en' ? 'zh' : 'en'
+  }
 </script>
 
 <style scoped>
@@ -37,19 +35,19 @@ function toggleLang() {
     margin-top: 5vh;
   }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
+  nav {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2rem;
+  }
 
-@media (min-width: 1024px) {
-  /*header {
+  @media (min-width: 1024px) {
+    /*header {
     display: flex;
     place-items: center;*/
-/*    padding-right: calc(var(--section-gap) / 2);*/
-  /*}
+    /*    padding-right: calc(var(--section-gap) / 2);*/
+    /*}
 
   .logo {
     margin: 0 2rem 0 0;
@@ -69,5 +67,5 @@ nav {
     padding: 1rem 0;
     margin-top: 1rem;
   }*/
-}
+  }
 </style>

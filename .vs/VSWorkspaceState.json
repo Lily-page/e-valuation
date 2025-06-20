@@ -2,8 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\Knightfrank.eValuation.Web",
-    "\\Knightfrank.eValuation.WebApi"
+    "\\Knightfrank.eValuation.WebApi\\Properties",
+    "\\Knightfrank.eValuation.Web\\src\\assets",
+    "\\Knightfrank.eValuation.Web\\src\\components",
+    "\\Knightfrank.eValuation.Web\\src\\locales",
+    "\\Knightfrank.eValuation.Web\\src\\router",
+    "\\Knightfrank.eValuation.Web\\src\\views"
   ],
-  "SelectedNode": "\\Knightfrank.eValuation.Web\\package.json",
+  "SelectedNode": "\\Knightfrank.eValuation.Web\\vite.config.ts",
   "PreviewInSolutionExplorer": false
 }

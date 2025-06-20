@@ -1,42 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\IT\\Project\\Dev\\e-valuation\\",
+  "WorkspaceRootPath": "C:\\IT\\Project\\Test\\e-valuation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\PropertyAPI.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.WebApi\\PropertyAPI.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.Web\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Dev\\e-valuation\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.Web\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.WebApi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.WebApi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.Web\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\src\\components\\Search.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.Web\\src\\components\\Search.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.Web\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\src\\components\\Result.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.Web\\src\\components\\Result.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.Web\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\Models\\Property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.WebApi\\Models\\Property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\Models\\PropertySearchRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.WebApi\\Models\\PropertySearchRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.Web\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\src\\App.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Knightfrank.eValuation.Web\\src\\App.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,60 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\IT\\Project\\Dev\\e-valuation\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\IT\\Project\\Dev\\e-valuation\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-06-12T08:26:06.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\README.md",
-              "RelativeDocumentMoniker": "Knightfrank.eValuation.Web\\README.md",
-              "ToolTip": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\README.md",
-              "RelativeToolTip": "Knightfrank.eValuation.Web\\README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-06-12T08:25:00.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\package.json",
-              "RelativeDocumentMoniker": "Knightfrank.eValuation.Web\\package.json",
-              "ToolTip": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\package.json",
-              "RelativeToolTip": "Knightfrank.eValuation.Web\\package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-12T08:24:53.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "package-lock.json",
-              "DocumentMoniker": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\package-lock.json",
-              "RelativeDocumentMoniker": "Knightfrank.eValuation.Web\\package-lock.json",
-              "ToolTip": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\package-lock.json",
-              "RelativeToolTip": "Knightfrank.eValuation.Web\\package-lock.json",
-              "ViewState": "AgIAAPYNAAAAAAAAAIAwwAMOAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-12T08:24:19.945Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -118,65 +54,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Property.cs",
-              "DocumentMoniker": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\Models\\Property.cs",
-              "RelativeDocumentMoniker": "Knightfrank.eValuation.WebApi\\Models\\Property.cs",
-              "ToolTip": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\Models\\Property.cs",
-              "RelativeToolTip": "Knightfrank.eValuation.WebApi\\Models\\Property.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:43:23.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PropertySearchRequest.cs",
-              "DocumentMoniker": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\Models\\PropertySearchRequest.cs",
-              "RelativeDocumentMoniker": "Knightfrank.eValuation.WebApi\\Models\\PropertySearchRequest.cs",
-              "ToolTip": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\Models\\PropertySearchRequest.cs",
-              "RelativeToolTip": "Knightfrank.eValuation.WebApi\\Models\\PropertySearchRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:43:21.942Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PropertyAPI.http",
-              "DocumentMoniker": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\PropertyAPI.http",
-              "RelativeDocumentMoniker": "Knightfrank.eValuation.WebApi\\PropertyAPI.http",
-              "ToolTip": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\PropertyAPI.http",
-              "RelativeToolTip": "Knightfrank.eValuation.WebApi\\PropertyAPI.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-06-12T07:42:28.861Z",
+              "DocumentIndex": 1,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\.env",
+              "RelativeDocumentMoniker": "Knightfrank.eValuation.Web\\.env",
+              "ToolTip": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\.env",
+              "RelativeToolTip": "Knightfrank.eValuation.Web\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-16T09:54:19.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\Program.cs",
+              "DocumentMoniker": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.WebApi\\Program.cs",
               "RelativeDocumentMoniker": "Knightfrank.eValuation.WebApi\\Program.cs",
-              "ToolTip": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.WebApi\\Program.cs",
+              "ToolTip": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.WebApi\\Program.cs",
               "RelativeToolTip": "Knightfrank.eValuation.WebApi\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvx4AAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:42:26.807Z",
+              "WhenOpened": "2025-06-16T09:53:18.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "vite.config.ts",
-              "DocumentMoniker": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\vite.config.ts",
+              "DocumentMoniker": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\vite.config.ts",
               "RelativeDocumentMoniker": "Knightfrank.eValuation.Web\\vite.config.ts",
-              "ToolTip": "C:\\IT\\Project\\Dev\\e-valuation\\Knightfrank.eValuation.Web\\vite.config.ts",
+              "ToolTip": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\vite.config.ts",
               "RelativeToolTip": "Knightfrank.eValuation.Web\\vite.config.ts",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-06-12T07:09:11.433Z"
+              "WhenOpened": "2025-06-16T09:52:24.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Search.vue",
+              "DocumentMoniker": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\src\\components\\Search.vue",
+              "RelativeDocumentMoniker": "Knightfrank.eValuation.Web\\src\\components\\Search.vue",
+              "ToolTip": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\src\\components\\Search.vue",
+              "RelativeToolTip": "Knightfrank.eValuation.Web\\src\\components\\Search.vue",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAANwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-06-16T09:51:12.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Result.vue",
+              "DocumentMoniker": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\src\\components\\Result.vue",
+              "RelativeDocumentMoniker": "Knightfrank.eValuation.Web\\src\\components\\Result.vue",
+              "ToolTip": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\src\\components\\Result.vue",
+              "RelativeToolTip": "Knightfrank.eValuation.Web\\src\\components\\Result.vue",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-06-16T09:50:27.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.vue",
+              "DocumentMoniker": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\src\\App.vue",
+              "RelativeDocumentMoniker": "Knightfrank.eValuation.Web\\src\\App.vue",
+              "ToolTip": "C:\\IT\\Project\\Test\\e-valuation\\Knightfrank.eValuation.Web\\src\\App.vue",
+              "RelativeToolTip": "Knightfrank.eValuation.Web\\src\\App.vue",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-06-16T09:49:38.971Z",
+              "EditorCaption": ""
             }
           ]
         }

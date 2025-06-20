@@ -1,32 +1,35 @@
 ﻿{
-    "welcome": "欢迎使用我们的应用",
-    "button": {
-        "toggleLang": "English",
-        "evaluate": "估價",
-        "reset": "重新計算"
+  "welcome": "欢迎使用我们的应用",
+  "button": {
+    "toggleLang": "English",
+    "evaluate": "估價",
+    "reset": "重新計算"
+  },
+  "text": {
+    "title": "物業估值",
+    "description": "請完成下列所有選項以進行物業估價。",
+    "placeholder": "請選擇",
+    "search": {
+      "title": "請輸入物業資料",
+      "zone": "區域",
+      "district": "分區",
+      "estateName": "屋苑名稱",
+      "block": "座數 / 座名",
+      "floor": "層數",
+      "unit": "室/單位"
     },
-    "text": {
-        "title": "物業估值",
-        "description": "請完成下列所有選項以進行物業估價。",
-        "placeholder": "請選擇",
-        "search": {
-            "title": "請輸入物業資料",
-            "zone": "區域",
-            "district": "分區",
-            "estateName": "屋苑名稱",
-            "block": "座數 / 座名",
-            "floor": "層數",
-            "unit": "室/單位"
-        },
-        "result": {
-            "title": "估值結果",
-            "valuation": "估價（港幣）",
-            "gfa": "建築面積 （平方呎）",
-            "sfa": "銷售面積 （平方呎）",
-            "gfaUnitRate": "建築面積 (平方呎價 )",
-            "sfaUnitRate": "銷售面積 (平方呎價 )",
-            "year": "樓齡 （年）",
-            "date": "估價日期"
-        }
+    "result": {
+      "title": "估值結果",
+      "valuation": "估價（港幣）",
+      "gfa": "建築面積 （平方呎）",
+      "sfa": "銷售面積 （平方呎）",
+      "gfaUnitRate": "建築面積 (平方呎價 )",
+      "sfaUnitRate": "銷售面積 (平方呎價 )",
+      "year": "樓齡 （年）",
+      "date": "估價日期",
+      "latest": "最新",
+      "noData": "請完成物業搜尋以查看估值結果",
+      "disclaimer": "此估值僅供參考，不應用於官方用途。實際物業價值可能因市場狀況和其他因素而有所不同。"
     }
+  }
 }
