@@ -1,0 +1,32 @@
+{
+    "welcome": "Welcome to our app",
+    "button": {
+        "toggleLang": "中文",
+        "evaluate": "Evaluate",
+        "reset":  "Reset"
+    },
+    "text": {
+        "title": "Property valuation",
+        "description": "Complete all the selections below to find out the property valuation",
+        "placeholder": "Please Select",
+        "search": {
+            "title": "Enter property details",
+            "zone": "Zone",
+            "district": "District",
+            "estateName": "Estate Name",
+            "block": "Block / Tower",
+            "floor": "Floor",
+            "unit": "Flat / Unit"
+        },
+        "result": {
+            "title": "Valuation Result",
+            "valuation": "Valuation HKD",
+            "gfa": "Gross floor area (sq ft)",
+            "sfa": "Saleable area (sq ft)",
+            "gfaUnitRate": "Unit Rate (per GFA)",
+            "sfaUnitRate": "Unit Rate (per SFA)",
+            "year": "Property age (year/s)",
+            "date": "Valuation date"
+        }
+    }
+}

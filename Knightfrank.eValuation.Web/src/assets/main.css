@@ -1,0 +1,36 @@
+@import './base.css';
+
+#app {
+/*  max-width: 1200px;*/
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: var(--knight-frank-red);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+    width: 80vw;
+  }
+}

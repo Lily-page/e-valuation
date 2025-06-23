@@ -1,4 +1,4 @@
-# PropertySystemVue
+# e-valuation
 
 Architecture
 Frontend: Vue 3 + Vite + TypeScript + Pinia (state management) + Vue Router
